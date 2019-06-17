@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="company.geodata.diana">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/diana_logo"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PatientsListActivity"
+            android:label="My Patients"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PatientCareActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_patient_care"
+            android:parentActivityName=".PatientsListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="company.geodata.diana.PatientsListActivity" />
+        </activity>
+    </application>
+
+</manifest>

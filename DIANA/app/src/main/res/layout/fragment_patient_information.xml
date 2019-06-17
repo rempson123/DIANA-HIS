@@ -1,0 +1,1663 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="company.geodata.diana.PatientCareActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDivider"
+                android:padding="15dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Visit:"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/tvDateOfVisit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuesday, May 16, 2017"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Time:"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4:00 PM"
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Admission:"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/tvDateOfAdmission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuesday, May 16, 2017"
+                        android:textSize="@dimen/text_size" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:padding="@dimen/_1sdp">
+
+                <ImageView
+                    android:id="@+id/imageViewPatient"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    app:srcCompat="@drawable/default_avatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".18"
+                            android:text="Patient Name:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvPatientName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".82"
+                            android:paddingLeft="5dp"
+                            android:text="Name"
+                            android:textSize="@dimen/text_size" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".18"
+                            android:text="Address:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".82"
+                            android:maxLines="4"
+                            android:paddingLeft="5dp"
+                            android:text="Block 8 Lot 3 Rosario Village, Botong Francisco Ave., Brgy. San Isidro, Angono Rizal "
+                            android:textSize="@dimen/text_size" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="0dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".18"
+                            android:text="Gender:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvGender"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".32"
+                            android:paddingLeft="5dp"
+                            android:text="Gender"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".15"
+                            android:text="Age:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvAge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".35"
+                            android:paddingLeft="5dp"
+                            android:text="Age"
+                            android:textSize="@dimen/text_size" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".18"
+                            android:text="Blood Type:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvBloodType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".32"
+                            android:paddingLeft="5dp"
+                            android:text="Blood Type"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".15"
+                            android:text="EMR No.:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvEmrno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".35"
+                            android:paddingLeft="5dp"
+                            android:text="EMR No."
+                            android:textSize="@dimen/text_size" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25">
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".18"
+                            android:text="Patient Type:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvPatientType"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".32"
+                            android:paddingLeft="5dp"
+                            android:text="Patient Type"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".15"
+                            android:text="Room-Bed:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvRoomBed"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".35"
+                            android:paddingLeft="5dp"
+                            android:text="Room-Bed"
+                            android:textSize="@dimen/text_size" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorDivider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:srcCompat="@drawable/allergy_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView78"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".18"
+                            android:text="Food:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvAllergyFood"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".32"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+
+                            android:text="Food"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".15"
+                            android:text="Latex:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvallergyLatext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".35"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Latex"
+                            android:textSize="@dimen/text_size" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".18"
+                            android:text="Medicine:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvAllergyMedicine"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".32"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Medicine"
+                            android:textSize="@dimen/text_size" />
+
+                        <TextView
+                            android:id="@+id/textView454"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".15"
+                            android:text="Others:"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/tvAllergyOthers"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".35"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Others"
+                            android:textSize="@dimen/text_size" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="VITAL SIGNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textStyle="normal|bold"  />
+
+        <View
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorDivider"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Time:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:hint="Time (1)"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:hint="Time (2)"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:hint="Time (3)"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textPulseRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Pulse Rate and Rythm:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1PulseRate"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2PulseRate"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3PulseRate"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textRespiratoryRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Respiratory Rate:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1RespiratoryRate"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2RespiratoryRate"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3RespiratoryRate"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textRespiratoryQuality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Respiratory Quality:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1RespiratoryQuality"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+
+            <EditText
+                android:id="@+id/editTextTime2RespiratoryQuality"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3RespiratoryQuality"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textSa02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="%Sa02:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1Sa02"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2Sa02"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3Sa02"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textCapRefill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Cap-Refill"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1CapRefill"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2CapRefill"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3CapRefill"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textBloodPressure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Blood Pressure:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size">
+
+                <EditText
+                    android:id="@+id/editTextTime1BloodPressure1st"
+                    android:layout_width="0dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".5"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:gravity="center_horizontal"
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/text_size" />
+                <TextView
+                    android:text="/"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:id="@+id/editTextTime1BloodPressure2nd"
+                    android:layout_width="0dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".5"
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size">
+
+                <EditText
+                    android:id="@+id/editTextTime2BloodPressure1st"
+                    android:layout_width="0dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".5"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:gravity="center_horizontal"
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/text_size" />
+                <TextView
+                    android:text="/"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:id="@+id/editTextTime2BloodPressure2nd"
+                    android:layout_width="0dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".5"
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size">
+
+                <EditText
+                    android:id="@+id/editTextTime3BloodPressure1st"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".5"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:gravity="center_horizontal"
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/text_size" />
+                <TextView
+                    android:text="/"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                    android:id="@+id/editTextTime3BloodPressure2nd"
+                    android:layout_width="0dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".5"
+                    android:background="@color/colorWhite"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textTemperature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Temperature:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1Temperature"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2Temperature"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3Temperature"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textLeftPupilSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="LEFT Pupil Size:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1LeftPupilSize"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2LeftPupilSize"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_13sdp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3LeftPupilSize"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textRightPupilSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="RIGHT Pupil Size:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1RightPupilSize"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2RightPupilSize"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3RightPupilSize"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textLeftPupilReaction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="LEFT Pupil Reaction:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1LeftPupilReaction"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2LeftPupilReaction"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3LeftPupilReaction"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textRightPupilReaction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="RIGHT Pupil Reaction:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1RightPupilReaction"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2RightPupilReaction"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3RightPupilReaction"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textPainScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Pain Score:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1PainScore"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2PainScore"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3PainScore"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textBloodGlucose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Blood Glucose Level:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1BloodGlucose"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2BloodGlucose"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3BloodGlucose"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:text="GLASCOW COMA SCALE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textStyle="normal|bold"  />
+        <View
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorDivider"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textEye"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Eye:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1Eye"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2Eye"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3Eye"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textVerbal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Verbal:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1Verbal"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2Verbal"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3Verbal"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textMotor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Motor:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1Motor"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2Motor"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3Motor"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/textTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".18"
+                android:text="Total:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextTime1Total"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime2Total"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/editTextTime3Total"
+                android:layout_width="0dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".27"
+                android:background="@drawable/edittext_background"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorDivider"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25"
+                    android:text="Chief Complaint:"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/tvChiefCompliant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textSize="@dimen/text_size" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25"
+                    android:text="Previous Assessment:"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/tvPreviousAssessment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:maxLines="4"
+                    android:paddingLeft="5dp"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textSize="@dimen/text_size" />
+
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView68"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight=".25"
+            android:text="Indications:"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/editIndications"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:gravity="top|left|center_vertical"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewSignature"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:padding="5dp"
+                    android:background="@drawable/signature_background" />
+
+                <TextView
+                    android:id="@+id/tvDoctor"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center_horizontal"
+                    android:text="Doctor's Name"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Save"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/btnViewReport"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"
+                    android:text="View Report"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:id="@+id/btnPost"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Post"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

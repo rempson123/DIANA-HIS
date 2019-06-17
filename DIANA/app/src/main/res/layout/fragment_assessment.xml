@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSelectedTab"
+            android:letterSpacing=".1"
+            android:padding="4dp"
+            android:text="Progress Note"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Subjective:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editSubjective"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".80"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/textVi33ew11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Objective:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editObjective"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".80"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/textView211"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Assessment:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editAssessment"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".80"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Plan:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editPlan"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".80"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView620"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSelectedTab"
+            android:letterSpacing=".1"
+            android:padding="4dp"
+            android:text="Diagnosis"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <RadioButton
+                android:id="@+id/rbInitial"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:gravity="center_vertical"
+                android:paddingRight="4dp"
+                android:text="Initial:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold"  />
+
+            <EditText
+                android:id="@+id/editInitial"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".80"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <RadioButton
+                android:id="@+id/rbAdmitting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:gravity="center_vertical"
+                android:paddingRight="4dp"
+                android:text="Admitting:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold"  />
+
+            <EditText
+                android:id="@+id/editAdmitting"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".80"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".40"
+                android:paddingLeft="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/signature_background"
+                    android:id="@+id/imageViewSignature" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Doctor's Name"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="normal|bold"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="right">
+
+                <Button
+                    android:text="Save"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/btnSave"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:text="View Report"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/button5"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:text="Post"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/button4"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

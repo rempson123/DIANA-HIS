@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSelectedTab"
+        android:letterSpacing=".1"
+        android:padding="4dp"
+        android:text="Prescription"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size"
+        android:textStyle="normal|bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/groupbox_background"
+        android:padding="@dimen/_5sdp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Medicine:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".35"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextMedicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_marginLeft="4dp"
+                    android:hint="Medicine"
+                    android:layout_weight=".8"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:textSize="@dimen/text_size" />
+
+                <ImageView
+                    android:id="@+id/imageViewSearch"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_marginLeft="4dp"
+                    app:srcCompat="@mipmap/ic_search" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="Generic Name:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextGenericName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".3"
+                android:hint="Generic name"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Dose:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".35"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextDose"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:hint="Dose"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="@dimen/text_size" />
+
+                <EditText
+                    android:id="@+id/editTextUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:hint="Unit"
+                    android:background="@drawable/edittext_background"
+                    android:drawableRight="@drawable/ic_arrow_drop_down"
+                    android:padding="5dp"
+                    android:textSize="@dimen/text_size" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView143"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Quantity:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".35"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextQuantity"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:hint="Quantity"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="@dimen/text_size" />
+
+                <EditText
+                    android:id="@+id/editTextDosage"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight=".4"
+                    android:hint="Dosage"
+                    android:background="@drawable/edittext_background"
+                    android:drawableRight="@drawable/ic_arrow_drop_down"
+                    android:padding="5dp"
+                    android:textSize="@dimen/text_size" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextNumberOfTake"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background"
+                    android:drawableRight="@drawable/ic_arrow_drop_down"
+                    android:padding="5dp"
+                    android:hint="No. of take"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/text_size" />
+
+                <EditText
+                    android:id="@+id/editTextType"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_marginLeft="4dp"
+                    android:hint="Type"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background"
+                    android:drawableRight="@drawable/ic_arrow_drop_down"
+                    android:padding="5dp"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Refill Instructions:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTextRefillInstructions"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:hint="Refill instructions"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".85"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+
+        </TableRow>
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <Button
+                android:id="@+id/buttonAddToList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical|center_horizontal" />
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:visibility="gone"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical|center_horizontal" />
+
+        </LinearLayout>
+
+    </TableLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewMedicine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:text="Medicine"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="1dp" />
+
+        <TextView
+            android:id="@+id/textViewGenericName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:text="Generic Name"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="1dp" />
+
+        <TextView
+            android:id="@+id/textViewDose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:text="Dose"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="1dp" />
+
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:text="Quantity"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="1dp" />
+
+        <TextView
+            android:id="@+id/textViewInstructions"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:text="Instructions"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="1dp" />
+        <TextView
+            android:id="@+id/textViewAction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".05"
+            android:text=""
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+</LinearLayout>

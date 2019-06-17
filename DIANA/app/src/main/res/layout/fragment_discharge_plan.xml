@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView68"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clinical Abstract Summary:"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editClinicalAbstract"
+            android:background="@drawable/edittext_background"
+            android:gravity="top|left|center_vertical"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorPrimaryText" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textViergw68"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Diagnosis:"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:id="@+id/editFinalDiagnosis"
+            android:background="@drawable/edittext_background"
+            android:gravity="top|left|center_vertical"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorPrimaryText" />
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="company.geodata.diana.Fragments.PrescriptionFragment"
+            android:id="@+id/prescriptionFragment"
+            android:tag="dischargePlan"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textVidew68"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="After Care Instructions:"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editAfterCare"
+            android:background="@drawable/edittext_background"
+            android:gravity="top|left|center_vertical"
+            android:padding="10dp"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/colorPrimaryText" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:paddingLeft="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/signature_background"
+                    android:id="@+id/imageViewSignature" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Doctor's Name"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="normal|bold"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right">
+
+                <Button
+                    android:text="Save"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/btnSave"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:text="View Report"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/button5"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:text="Post"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/button4"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

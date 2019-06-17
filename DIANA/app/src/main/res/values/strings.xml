@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">DIANA-HIS</string>
+    <string name="title_activity_patient_care">Patient Care</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!--ARRAYS-->
+    <string-array name="array_units">
+        <item>g</item>
+        <item>kg</item>
+        <item>mg</item>
+        <item>ton</item>
+        <item>lb</item>
+        <item>oz</item>
+    </string-array>
+
+    <string-array name="array_dosage">
+        <item>Capsule</item>
+        <item>Tablet</item>
+        <item>Syrup</item>
+    </string-array>
+
+    <string-array name="array_num_of_take">
+        <item>Every 4 hours</item>
+        <item>3x a day</item>
+        <item>2x a day</item>
+        <item>1x a day</item>
+    </string-array>
+
+    <string-array name="array_type">
+        <item>Oral</item>
+        <item>Rectal</item>
+    </string-array>
+
+    <string-array name="array_respiratory_quality">
+        <item>Normal</item>
+        <item>Labored</item>
+        <item>Shallow</item>
+        <item>Noisy</item>
+        <item>Absent</item>
+    </string-array>
+
+    <string-array name="array_cap_refill">
+        <item> &lt;2 sec</item>
+        <item> &gt;2 sec</item>
+    </string-array>
+
+    <string-array name="array_pupils_size">
+        <item>Equal</item>
+        <item>Unequal</item>
+        <item>Normal</item>
+        <item>Constricted</item>
+        <item>Dilated</item>
+    </string-array>
+
+    <string-array name="array_pupils_reaction">
+        <item>React</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="array_pain_score">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="array_eye_glascow_coma_scale">
+        <item>Spontaneous</item>
+        <item>To voice</item>
+        <item>To pain</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="array_verbal_glascow_coma_scale">
+        <item>Oriented</item>
+        <item>Confused</item>
+        <item>Inappropriate words</item>
+        <item>Incomp. sound</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="array_motor_glascow_coma_scale">
+        <item>Obeys</item>
+        <item>Local pain</item>
+        <item>Flex to pain</item>
+        <item>Abnormal flex</item>
+        <item>Ext. to pain</item>
+        <item>None</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
+    android:background="@color/colorWhite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="company.geodata.diana.Fragments.PrescriptionFragment"
+            android:id="@+id/prescriptionFragment"
+            android:tag="orders"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:gravity="right|center_vertical"
+            android:paddingRight="4dp"
+            android:text="Food:"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editFood"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".85"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+            android:id="@+id/textView151"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:gravity="right|center_vertical"
+            android:paddingRight="4dp"
+            android:text="Tests:"
+            android:textSize="@dimen/text_size"
+            android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editTests"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".85"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Procedures:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editProcedures"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".85"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/textViewfg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Intravenous Fluid:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editIntravenous"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".85"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/textViewfdd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="right|center_vertical"
+                android:paddingRight="4dp"
+                android:text="Blood Transfusion:"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/editBloodTransfusion"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight=".85"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size"
+                android:gravity="top|left" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".35"
+                android:paddingLeft="@dimen/_5sdp">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/signature_background"
+                    android:id="@+id/imageViewSignature" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Doctor's Name"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="normal|bold"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right">
+
+                <Button
+                    android:text="Save"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/btnSave"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:text="View Report"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/button5"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp" />
+
+                <Button
+                    android:text="Post"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/button4"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

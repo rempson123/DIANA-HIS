@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LinearLayoutRow">
+
+    <TextView
+        android:id="@+id/textViewMedicine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:text="Medicine"
+        android:textSize="@dimen/text_size"
+        android:textStyle="normal"
+        android:background="@drawable/table_border"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/textViewGenericName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:text="Generic Name"
+        android:textSize="@dimen/text_size"
+        android:textStyle="normal"
+        android:background="@drawable/table_border"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/textViewDose"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:text="Dose"
+        android:textSize="@dimen/text_size"
+        android:textStyle="normal"
+        android:background="@drawable/table_border"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/textViewQuantity"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:text="Quantity"
+        android:textSize="@dimen/text_size"
+        android:textStyle="normal"
+        android:background="@drawable/table_border"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/textViewInstructions"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:text="Instructions"
+        android:textSize="@dimen/text_size"
+        android:textStyle="normal"
+        android:background="@drawable/table_border"
+        android:padding="4dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/ic_remove"
+        android:layout_weight=".05"
+        android:background="@drawable/table_border"
+        android:id="@+id/imageViewRemove"/>
+
+
+</LinearLayout>
