@@ -12,71 +12,61 @@
     tools:context="company.geodata.diana.LoginActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+
         android:orientation="vertical"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_width="wrap_content"
-            android:layout_marginBottom="@dimen/_10sdp"
-            android:layout_height="@dimen/_55sdp">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginLeft="@dimen/_40sdp"
-            android:layout_marginRight="@dimen/_40sdp"
-            android:paddingBottom="@dimen/_15sdp"
-            android:paddingTop="@dimen/_15sdp"
-            android:paddingLeft="@dimen/_10sdp"
-            android:paddingRight="@dimen/_10sdp"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
-            <EditText
-                android:id="@+id/editUsername"
-                android:paddingTop="@dimen/_3sdp"
-                android:paddingBottom="@dimen/_3sdp"
-                android:paddingLeft="@dimen/_3sdp"
-                android:paddingRight="@dimen/_3sdp"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="wrap_content"
-                android:hint="Username"
-                android:textSize="@dimen/_8sdp"
-                android:drawableLeft="@mipmap/ic_user"
-                android:background="#FFFFFF" />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="@android:color/darker_gray"/>
-            <EditText
-                android:paddingTop="@dimen/_3sdp"
-                android:paddingBottom="@dimen/_3sdp"
-                android:paddingLeft="@dimen/_3sdp"
-                android:paddingRight="@dimen/_3sdp"
-                android:layout_width="match_parent"
-                android:hint="Password"
-                android:id="@+id/editPassword"
-                android:inputType="textPassword"
-                android:textSize="@dimen/_8sdp"
-                android:background="#FFFFFF"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@mipmap/ic_password"
-                />
-            <Button
-                android:id="@+id/btnLogin"
-                style="?android:textAppearanceSmall"
-                android:textSize="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_3sdp"
-                android:background="#95a5a6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            android:background="@drawable/diana_logo"
+            android:layout_gravity="center_horizontal" />
+        <EditText
+            android:id="@+id/editUsername"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textSize="@dimen/_8sdp"
+            android:drawableLeft="@mipmap/ic_user"
+            android:background="#FFFFFF" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+        <EditText
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:hint="Password"
+            android:id="@+id/editPassword"
+            android:inputType="textPassword"
+            android:textSize="@dimen/_8sdp"
+            android:background="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_password"
+            />
+        <Button
+            android:id="@+id/btnLogin"
+            style="?android:textAppearanceSmall"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="#95a5a6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-                android:text="Log in"
-                android:textStyle="bold" />
-        </LinearLayout>
+            android:text="Log in"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>
