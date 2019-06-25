@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(i);
                 /*Orders orders = Orders.findOrders(LoginActivity.this, new Orders("0"));
                 Log.d("CHECK", "onClick: " + orders.getPatientID());*/
-                Toast.makeText(LoginActivity.this, "Welcome to Diana-HER", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Welcome to Diana-HIS", Toast.LENGTH_SHORT).show();
             }
         });
     }
